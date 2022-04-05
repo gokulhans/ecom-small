@@ -31,6 +31,7 @@ router.get("/", async function (req, res, next) {
     productHelpers.getRandomProducts().then((products) => {
       res.render("user/user-products", {
         user: true,
+        oguser:true,
         products,
         users,
         dropdown: true,
@@ -43,6 +44,7 @@ router.get("/", async function (req, res, next) {
     productHelpers.getRandomProducts().then((products) => {
       res.render("user/user-products", {
         user: true,
+
         products,
         users,
         dropdown: true,
@@ -113,7 +115,7 @@ router.post("/signup", (req, res) => {
 router.get("/logout", (req, res) => {
   req.session.user = null;
   req.session.userLoggedIn = false;
-  res.redirect("/login");
+  res.redirect("/");
 });
 
 router.get("/single/:id", async (req, res) => {

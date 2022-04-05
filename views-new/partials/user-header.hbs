@@ -20,7 +20,10 @@
 	<div class="icons">
 		<div class="fas fa-search" id="search-btn"></div>
 	</div>
-
+{{#if oguser}}
+<p>{{users._id}}</p>
+<a href="/logout">logout</a>
+{{/if}}
 	<form action="" class="search-form">
 		<input type="search" id="search-box" placeholder="search here...">
 		<label for="search-box" class="fas fa-search"></label>

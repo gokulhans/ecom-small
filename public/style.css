@@ -51,7 +51,7 @@ Version:1.0
 	display: inline-block;
 	padding: 13px 32px;
 	border-radius: 0px;
-	text-transform:uppercase;
+	/* text-transform:uppercase; */
 }
 .btn:hover{
 	color:#fff;
@@ -294,7 +294,7 @@ Version:1.0
 .header.shop .nav li .new {
 	background: #F7941D;
 	color: #fff;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 	font-size: 10px;
 	padding: 0px 9px;
 	position: absolute;
@@ -353,14 +353,14 @@ Version:1.0
 	border-bottom:1px solid #e6e6e6;
 }
 .header .shopping .dropdown-cart-header span {
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 	color: #222;
 	font-size: 13px;
 	font-weight: 600;
 }
 .header .shopping .dropdown-cart-header a {
 	float: right;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 	color: #222;
 	font-size: 13px;
 	font-weight: 600;
@@ -434,7 +434,7 @@ Version:1.0
     padding-bottom: 10px;
 }
 .header .shopping-item .total span {
-	text-transform:uppercase;
+	/* text-transform:uppercase; */
 	color:#222;
 	font-size:13px;
 	font-weight:600;
@@ -451,7 +451,7 @@ Version:1.0
 	color: #fff;
 	margin-top: 10px;
 	border-radius: 0px;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 	font-size: 14px;
 	font-weight: 500;
 }
@@ -659,7 +659,7 @@ Version:1.0
 	color: #333;
 	padding: 13px 25px 13px 25px;
 	display: block;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 }
 .header.shop .main-category li a i{
 	display:inline-block;
@@ -787,7 +787,7 @@ Version:1.0
 .header.shop .nav li .new {
 	background: #F7941D;
 	color: #fff;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 	font-size: 9px;
 	position: absolute;
 	left: 21px;
@@ -1163,13 +1163,13 @@ Version:1.0
 }
 .hero-area2 .single-slider .content .sub-title{
 	color:#fff;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 	font-size:15px;
 	font-weight:500;
 }
 .hero-area2 .single-slider .content .title {
 	color: #fff;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 	font-size: 24px;
 	display: block;
 	margin-top: 10px;
@@ -1428,7 +1428,7 @@ Version:1.0
 	font-size: 12px;
 	font-weight:500;
 	display: inline-block;
-	text-transform:uppercase;
+	/* text-transform:uppercase; */
 	border-bottom:2px solid #333;
 }
 .small-banner .single-banner a:hover{
@@ -1465,7 +1465,7 @@ Version:1.0
 .midium-banner .single-banner h3 {
 	font-size: 27px;
 	font-weight: 700;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 	color: #333;
 	line-height: 30px;
 }
@@ -1477,7 +1477,7 @@ Version:1.0
 	color: #F7941D;
 	font-weight: 500;
 	margin-bottom: 5px;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 }
 .midium-banner .single-banner a {
 	display: inline-block;
@@ -1495,7 +1495,7 @@ Version:1.0
 	padding: 10px 27px;
 	border-radius: 30px;
 	margin-top: 25px;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 }
 .midium-banner .single-banner a:hover{
 	background:#F7941D;
@@ -1576,7 +1576,7 @@ Version:1.0
 }
 .product-area .nav-tabs li a {
 	color: #333;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 	display: inline-block;
 	position: relative;
 	margin-right: 5px;
@@ -1635,7 +1635,7 @@ Version:1.0
 	border-radius: 0;
 	text-align: center;
 	position: absolute;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 	border-radius: 30px;
 	height: 26px;
 	line-height: 25px;
@@ -1652,7 +1652,7 @@ Version:1.0
 	border-radius: 0;
 	text-align: center;
 	position: absolute;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 	border-radius: 30px;
 	height: 26px;
 	line-height: 24px;
@@ -1669,7 +1669,7 @@ Version:1.0
 	border-radius: 0;
 	text-align: center;
 	position: absolute;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 	border-radius: 30px;
 	height: 26px;
 	line-height: 24px;
@@ -1771,7 +1771,7 @@ Version:1.0
 	text-align: left;
 	font-size: 12px;
 	font-weight: 600;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 	line-height: 1;
 	display: inline-block;
 }
@@ -2039,7 +2039,7 @@ Version:1.0
 	color: #333;
 	font-weight: 500;
 	margin: 5px 0 0px 0;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 	font-size: 14px;
 }
 .shop-sidebar .single-post .reviews li{
@@ -3121,7 +3121,7 @@ Version:1.0
 	font-weight: 600;
 	padding: 10px 30px;
 	line-height: 24px;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 	color: #333;
 	padding-bottom: 5px;
 }
@@ -3229,7 +3229,7 @@ Version:1.0
 	line-height: 19px;
 	text-align: center;
 	border-radius: 0;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 	color: #fff;
 }
 /*======================================
@@ -3248,7 +3248,7 @@ Version:1.0
 	color: #333;
 	font-weight: 400;
 	line-height: 27px;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 	margin-bottom: 12px;
 	padding-bottom: 20px;
 	text-align: center;
@@ -3520,7 +3520,7 @@ Version:1.0
 	font-size: 13px;
 	color: #777;
 	display: block;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 	margin-bottom: 5px;
 	font-weight: 600;
 }
@@ -3560,12 +3560,12 @@ Version:1.0
 	color: #333;
 	font-size: 22px;
 	font-weight:400;
-	text-transform:uppercase;
+	/* text-transform:uppercase; */
 }
 .cown-down .content .cdown p{
 	font-size:13px;
 	color:#666;
-	text-transform:uppercase;
+	/* text-transform:uppercase; */
 }
 /*=============================
 	End Cowndown CSS
@@ -3603,7 +3603,7 @@ Version:1.0
 .shop-services .single-service h4 {
 	font-size: 14px;
 	font-weight: 600;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 	line-height: 22px;
 	color: #333;
 }
@@ -3630,7 +3630,7 @@ Version:1.0
 	font-size: 17px;
 	font-weight: 600;
 	margin-bottom: 5px;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 }
 .shop-newsletter .inner p{
 	color:#777;
@@ -3677,7 +3677,7 @@ Version:1.0
 	border-radius: 0 30px 30px 0;
 	font-size: 14px;
 	font-weight: 500;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 }
 .shop-newsletter .newsletter-inner .btn:hover{
 	background:#333;
@@ -4174,7 +4174,7 @@ Version:1.0
 	text-align: center;
 	line-height: 42px;
 	margin-top: 10px;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 	font-weight: 500;
 }
 .main-sidebar .newsletter .letter-inner .form-inner a:hover{
@@ -4589,7 +4589,7 @@ Version:1.0
 	display: block;
 	font-weight: 600;
 	color: #F7941D;
-	text-transform: uppercase;
+	/* text-transform:uppercase; */
 	font-size: 30px;
 }
 .mail-success .mail-inner p {
