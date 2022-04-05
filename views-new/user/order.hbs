@@ -1,0 +1,42 @@
+
+
+    <style>
+        .order {
+            width: 100%;
+            font-size: large;
+            font-weight: 400;
+            background-color: #00a100;
+            color: #fff !important;
+            border-radius: 0.7rem;
+            padding: 1rem;
+        }
+
+        .order:hover {
+            background-color: #00a100;
+            color: #fff !important;
+            border-radius: 0.7rem;
+        }
+        .icons{
+            border-bottom: none !important;
+        }
+    </style>
+
+    <section class="blogs" id="blogs">
+        <div class="box-container">
+                        {{#each orders}}
+
+            <div class="box">
+                <img src="images/blog-1.jpg" alt="">
+                <div class="content">
+                    <div class="icons m-3">
+                        <a href="#"><h3>Fresh sea Fishes</h3></a>
+                        <a href="#"> <i class="fas fa-rupee-sign"></i> 110 </a>
+                    </div>
+                    <a href="/" class="btn order"><b>Deliverd</b></a>
+                </div>
+            </div>
+                        {{/each}}
+
+        </div>
+    </section>
+

@@ -1,0 +1,78 @@
+
+    <style>
+        .box {
+            width: 46%;
+            height: 22rem;
+            margin: 2%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .order {
+            width: 100%;
+            height: 4rem;
+            margin-top: 1rem;
+            font-size: medium;
+            font-weight: 400;
+            color: #ff7800;
+            border-radius: 0.7rem;
+        }
+
+        .order:hover {
+            background-color: #ff7800;
+            color: #fff;
+            border-radius: 0.7rem;
+        }
+
+        .carousel-item {
+            height: 10rem;
+        }
+
+        .carousel img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1534948216015-843149f72be3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                    class="d-block w-100 carousel" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1534948216015-843149f72be3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                    class="d-block w-100 carousel" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1534948216015-843149f72be3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                    class="d-block w-100 carousel" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <section class="products" id="products">
+
+        <h1 class="heading"><span>Todays Deals</span> </h1>
+
+        <div class="swiper product-slider row">
+									{{#each products}}
+
+            <a href="/single/{{this._id}}" class="box">
+                <img src="images/product-1.png" alt="">
+                <h3>{{this.product}}</h3>
+                <div class="price">{{this.price}} </div>
+                <button class="btn btn-outline-warning order"><b>Order Now</b></button>
+            </a>
+         									{{/each}}
+
+
+        </div>
+
+    </section>
+
+

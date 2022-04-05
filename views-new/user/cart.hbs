@@ -1,0 +1,124 @@
+
+    <style>
+        .shopping-cart {
+            border-radius: .5rem;
+            /* box-shadow: var(--box-shadow); */
+            width: 100%;
+            background: #fff;
+        }
+
+        .shopping-cart .box {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            position: relative;
+        }
+
+        .shopping-cart .box img {
+            height: 10rem;
+        }
+
+        .shopping-cart .box .fa-trash {
+            font-size: 2rem;
+            position: absolute;
+            top: 50%;
+            right: 2rem;
+            cursor: pointer;
+            color: var(--light-color);
+            transform: translateY(-50%);
+        }
+
+        .shopping-cart .box .fa-trash:hover {
+            color: var(--orange);
+        }
+
+        .shopping-cart .box .content h3 {
+            color: var(--black);
+            font-size: 1.7rem;
+            padding-bottom: 1rem;
+        }
+
+        .shopping-cart .box .content span {
+            color: var(--light-color);
+            font-size: 1.6rem;
+        }
+
+        .shopping-cart .box .content .quantity {
+            padding-left: 1rem;
+        }
+
+        .shopping-cart .total {
+            font-size: 2.5rem;
+            padding: 1rem 0;
+            text-align: center;
+            color: var(--black);
+        }
+
+        .shopping-cart .btn {
+            display: block;
+            text-align: center;
+            margin: 1rem;
+        }
+
+        .order {
+            width: 100%;
+            font-size: large;
+            font-weight: 400;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .width {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(255, 255, 255) !important;
+            position: fixed;
+            bottom: 70px;
+            height: 50px;
+        }
+
+
+
+        .total{
+            width: 100%;
+            margin-top: 1rem;
+            font-size: large;
+            font-weight: 400;
+            color: #ff7800;
+            background-color: #fff;
+            padding: 1.5rem;
+            position: fixed;
+            bottom: 120px;
+            font-weight: 600;
+        }
+    </style>
+
+    <div class="shopping-cart">
+        						{{#each prodList}}
+
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="images/cart-img-2.png" alt="">
+            <div class="content">
+                <h3>{{this.product.product}}</h3>
+                <span class="price">{{this.product.price}}</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+      
+						{{/each}}
+
+        <div class="total"> total : $19.69/- </div>
+    </div>
+<div class="width">
+    <a href="/" class="btn btn-success order"><b>Check out</b></a>
+</div>
+
+
+
+
+
+

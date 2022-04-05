@@ -1,0 +1,18 @@
+<form control="" action="/login" method="POST" class="form-group">
+    <div class="row">
+        <input type="text" name="email" id="username" class="form__input" placeholder="Email">
+    </div>
+    <div class="row">
+        <!-- <span class="fa fa-lock"></span> -->
+        <input type="password" name="password" id="password" class="form__input" placeholder="Password">
+        {{#if loginErr}}
+        <p class="error" style="color: #ee0303;">{{loginErr}}</p>
+        {{/if}}
+        {{#if block}}
+        <p class="error" style="color: #ee0303;">your account is blocked</p>
+        {{/if}}
+    </div>
+    <div class="row">
+        <input type="submit" value="Login" class="btn">
+    </div>
+</form>

@@ -1,0 +1,58 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.4.1/dist/chart.min.js"></script>
+        
+        <!-- Page Content -->   
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-12">
+                        <h4 class="page-title">Dashboard</h4>
+                        <div class="row">
+                           <a href="/admin/adminlogout" class="btn btn-danger" >Logout</a>
+                           <a href="/admin/add-product" class="btn btn-success" >add P</a>
+                           <a href="/admin/product-manager" class="btn btn-success" > PM</a>
+                           <a href="/admin/user-manager" class="btn btn-success" >UM</a>
+                           <a href="/admin/order-manager" class="btn btn-success" >OM</a>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                 <div class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12">
+                        <div class="white-box">
+                            <div class="row row-in">
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="col-in text-center">
+                                        <h5 class="text-danger">Total Products</h5>
+                                        <h3 class="counter">{{totalProducts}}</h3>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="col-in text-center b-r-none">
+                                        <h5 class="text-muted text-warning">Total Users</h5>
+                                        <h3 class="counter">{{totalUser}}</h3>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="col-in text-center">
+                                        <h5 class="text-muted text-purple">Total Orders</h5>
+                                        <h3 class="counter">{{orders}} </h3>
+                                    </div>
+                                </div>
+                               
+                                {{!-- <div class="col-lg-3 col-sm-6">
+                                    <div class="col-in text-center b-0">
+                                        <h5 class="text-info">Explorer</h5>
+                                        <h3 class="counter">2500</h3>
+                                    </div>
+                                </div> --}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row -->
+               
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        	
+	<!-- /#wrapper -->
