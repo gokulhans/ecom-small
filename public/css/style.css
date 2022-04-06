@@ -1,5 +1,10 @@
+<<<<<<< HEAD
+a {
+  color: #00B7FF;
+=======
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+>>>>>>> fcf0211691f3b1c49dfd2b0ae582244ca72528e5
 }
 
 a {
@@ -257,7 +262,11 @@ section{
 
 .header .login-form h3{
   font-size: 2.5rem;
+<<<<<<< HEAD
+  text-transform: uppercase;
+=======
   /* text-transform:uppercase; */
+>>>>>>> fcf0211691f3b1c49dfd2b0ae582244ca72528e5
   color: var(--black);
 }
 
@@ -713,4 +722,8 @@ section{
       margin: 2rem auto;
   }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> fcf0211691f3b1c49dfd2b0ae582244ca72528e5
