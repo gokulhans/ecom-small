@@ -15,6 +15,9 @@ const verifyLogin = (req, res, next) => {
   }
 };
 
+router.get("/megaadmin", (req, res) => {
+  res.render("user/megaadmin");
+});
 
 
 /* GET home page. */
