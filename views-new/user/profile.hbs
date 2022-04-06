@@ -1,1 +1,42 @@
-profile
+
+
+<style>
+  h1,
+  h3,
+  h4 {
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .order {
+    width: 90%;
+    font-size: large;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #fff !important;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    margin: 1rem;
+  }
+</style>
+
+<div class="h-100" style="background-color: rgb(255, 255, 255);">
+  <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="col-md-12 col-xl-4">
+      <div class="">
+        <div class="card-body text-center">
+          <div class="mt-3 mb-4">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
+              class="rounded-circle img-fluid" style="width: 120px;" />
+          </div>
+          <h1 class="mb-2">Julie Arsenault</h1>
+          <h3 class="text-muted mb-4">{{profile.email}} </h3>
+          <h4 class="mb-5">Bay Area, San Francisco, CA</h4>
+          <a href="/edit-profile/{{profile._id}}" class="p-3 btn order btn-success btn-rounded btn-lg">Edit Profile</a>
+          <a href="/track" class="p-3 btn order btn-success btn-rounded btn-lg">Track Your Order</a>
+          <a href="/myorders" class="p-3 btn order btn-success btn-rounded btn-lg">My Orders</a>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>

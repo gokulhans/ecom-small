@@ -84,15 +84,15 @@ router.post("/edit-product/:id", (req, res) => {
 
 // Order Setup 
 
-router.post("/changeStatus", (req, res) => {
-  productHelpers.changeStatus(req.body.order).then((response) => {
-    res.json({ status: true });
+router.post("/changeStatus/:order", (req, res) => {
+  productHelpers.changeStatus(req.params.order).then((response) => {
+    res.redirect('/admin/order-manager/');
   });
 });
 
-router.post("/changeToDeliver", (req, res) => {
-  productHelpers.changeStatusDelivered(req.body.order).then((response) => {
-    res.json({ status: true });
+router.post("/changeToDeliver/:order", (req, res) => {
+  productHelpers.changeStatusDelivered(req.params.order).then((response) => {
+    res.redirect('/admin/order-manager/');
   });
 });
 

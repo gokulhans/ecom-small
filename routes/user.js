@@ -55,6 +55,40 @@ router.get("/", async function (req, res, next) {
     });
   }
 });
+router.get("/fish", async function (req, res, next) {
+  let users = req.session.user;
+  let total = {};
+  if (req.session.user) {
+    let prodList = await userHelpers.getCartProducts(req.session.user._id);
+    let count = await userHelpers.getCartCount(req.session.user._id);
+    if (count) {
+      total = await userHelpers.getTotalAmount(req.session.user._id);
+    }
+    console.log("ssssssssss");
+    productHelpers.getRandomProducts().then((products) => {
+      res.render("user/fish", {
+        user: true,
+        oguser:true,
+        products,
+        users,
+        dropdown: true,
+        prodList,
+        count,
+        total,
+      });
+    });
+  } else {
+    productHelpers.getRandomProducts().then((products) => {
+      res.render("user/fish", {
+        user: true,
+
+        products,
+        users,
+        dropdown: true,
+      });
+    });
+  }
+});
 
 router.get("/login", (req, res) => {
   if (req.session.userLoggedIn) {
@@ -166,7 +200,6 @@ router.get("/myorders/:id", verifyLogin, async (req, res) => {
 
 router.get("/myorders", verifyLogin, async (req, res) => {
   let orders = await userHelpers.getUserOrders(req.session.user._id);
-  console.log(orders);
   res.render("user/order", { user: true, users: req.session.user, orders });
 });
 
@@ -221,7 +254,7 @@ router.get("/checkout", verifyLogin, async (req, res) => {
 router.post("/checkout",verifyLogin, async (req, res) => {
 
   console.log(req.body);
-  let totalAmount = req.body.total
+  // let totalAmount = req.body.total
  let products = await userHelpers.getCartProductList(req.body.userId);
   userHelpers.placeOrder(req.body, products).then((data) => {
   res.redirect('/myorders')
@@ -229,6 +262,28 @@ router.post("/checkout",verifyLogin, async (req, res) => {
 
 });
 
+
+
+router.get("/profile", verifyLogin, async (req, res) => {
+  let profile = await userHelpers.getUserProfile(req.session.user._id);
+  res.render("user/profile", { profile ,user:true,users:req.session.user});
+});
+
+router.get("/edit-profile/:id", verifyLogin, async (req, res) => {
+  let profile = await userHelpers.getUserProfile(req.params.id);
+  res.render("user/edit-profile", { profile });
+});
+
+router.post("/update-profile/:id", (req, res) => {
+  userHelpers.updateProfile(req.params.id, req.body).then(() => {
+    if(req.files){
+    let image = req.files.image;
+    userHelpers.updateDP(req.params.id, req.body)
+  image.mv("./public/profile-photos/" + req.params.id + ".jpg");
+    }
+    res.redirect("/profile/");
+  });
+});
 
 
 

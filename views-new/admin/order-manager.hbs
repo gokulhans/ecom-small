@@ -59,13 +59,19 @@
                     {{#if delivered}}
                     <td class="text-center">Order delivered</td>
                     {{else}}
-                     <td class="text-center"><button id="delivered"  onclick="proceedToDeliver('{{this._id}}')" type="button">Delivered</button></td>
+                     <td class="text-center"><form id="delivered"  action="/admin/changeToDeliver/{{this._id}}" method="post">
+                     <button type="submit" >Delivered </button>
+                     </form></td>
                      <td class="text-center"><button><a href="admin/cancel-order/{{this._id}}" onclick="return confirm('confirm cancel {{this.product}}')">Cancel Order</a></button></td>
 
                      {{/if}}
 
                     {{else}}
-                    <td class="text-center"><button id="shipped"  onclick="proceedToShip('{{this._id}}')" type="button">Shipped</button></td>   
+                    <td class="text-center">
+                      <form id="shipped"  action="/admin/changeStatus/{{this._id}}" method="post">
+                     <button type="submit" >Shipped </button>
+                     </form>
+                   </td>   
                     <td class="text-center"><button><a href="/admin/cancel-order/{{this._id}}" onclick="return confirm('confirm cancel {{this.product}}')">Cancel Order</a></button></td>
                     {{/if}} 
 
