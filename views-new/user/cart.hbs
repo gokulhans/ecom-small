@@ -95,30 +95,38 @@
             font-weight: 600;
         }
     </style>
-
+        {{#if count}}
     <div class="shopping-cart">
         						{{#each prodList}}
 
         <div class="box">
-            <i class="fas fa-trash"></i>
+            <a href="/remove-product-fromCart/{{this._id}}/{{this.product._id}}" onclick="return confirm('confirm delete {{this.product.product}}')">
+
+            <i class="fas fa-trash"></i></a>
             <img src="images/cart-img-2.png" alt="">
             <div class="content">
                 <h3>{{this.product.product}}</h3>
                 <span class="price">{{this.product.price}}</span>
-                <span class="quantity">qty : 1</span>
+                <span class="quantity">qty : {{this.proquantity}} </span>
+                <span class="price">total : {{this.total}} </span>
             </div>
         </div>
       
 						{{/each}}
 
-        <div class="total"> total : $19.69/- </div>
+        <div class="total"> total : $ {{total}} </div>
     </div>
 <div class="width">
-    <a href="/" class="btn btn-success order"><b>Check out</b></a>
+    <a href="/checkout" class="btn btn-success order"><b>Check out</b></a>
+    <a href="/" class="btn btn-warning order"><b>Continue Shopping</b></a>
 </div>
 
 
+{{else}}
 
+<h1 style="color:rgb(245, 161, 4) ;" class="text-center">Your Cart Is Empty</h1>
+
+{{/if}}
 
 
 

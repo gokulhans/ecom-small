@@ -1,0 +1,30 @@
+<form class="form" action="/checkout" method="post">
+    <input type="text" name="total" value="{{total}}">
+    <input type="text" name="userId" value="{{users._id}}">
+    <input type="text" name="count" value="{{count}}">
+
+    <button type="submit" id="e" class="btn">Place Order</button>
+
+</form>
+
+<h2>CART TOTALS</h2>
+<div class="content">
+    <ul>
+        {{#if count}}
+        <li>Sub Total<span style="float: right; margin-right: 5%;" id="total"><i class="fa fa-inr"></i> {{total}}</span>
+        </li>
+        <li>(+) Shipping<span style="float: right; margin-right: 5%;" id="total"><i class="fa fa-inr"></i>00.00</span>
+        </li>
+        <li class="last">Total<span style="float: right; margin-right: 5%;" id="total"><i class="fa fa-inr"></i>
+                {{total}}</span></li>
+        {{else}}
+        <li>Sub Total<span style="float: right; margin-right: 5%;" id="total"><i class="fa fa-inr"></i> 00.00</span>
+        </li>
+        <li>(+) Shipping<span style="float: right; margin-right: 5%;" id="total"><i class="fa fa-inr"></i>00.00</span>
+        </li>
+        <li class="last">Total<span style="float: right; margin-right: 5%;" id="total"><i class="fa fa-inr"></i>
+                00.00</span></li>
+        {{/if}}
+    </ul>
+</div>
+</div>
