@@ -62,12 +62,12 @@
         <div class="swiper product-slider row">
 									{{#each products}}
 
-            <a href="/single/{{this._id}}" class="box">
+            <div class="box">
                 <img src="images/product-1.png" alt="">
-                <h3>{{this.product}}</h3>
+               <a href="/single/{{this._id}}"> <h3>{{this.product}}</h3></a>
                 <div class="price">{{this.price}} </div>
-                <button class="btn btn-outline-warning order"><b>Order Now</b></button>
-            </a>
+                <button onclick="addToCart('{{this._id}}')" class="btn btn-outline-warning order"><b>Add To Cart</b></button>
+            </div>
          									{{/each}}
 
 
@@ -75,4 +75,13 @@
 
     </section>
 
+
+  <div class="flash" style="z-index: 9999;">
+    <div class="flash__icon">
+      <i class="far fa-check-circle" style="padding-top: 10px;"></i>
+    </div>
+    <p class="flash__body">
+      Added to cart
+    </p>
+  </div>
 
