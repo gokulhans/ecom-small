@@ -7,6 +7,8 @@ a {
   color: inherit !important;
 }
 
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 :root{
@@ -25,8 +27,8 @@ a {
   box-sizing: border-box;
   outline: none; border:none;
   text-decoration: none;
-  text-transform: capitalize;
   transition: all .2s linear;
+  /* text-transform: capitalize; */
 }
 
 html{
@@ -257,7 +259,7 @@ section{
 
 .header .login-form h3{
   font-size: 2.5rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: var(--black);
 }
 
