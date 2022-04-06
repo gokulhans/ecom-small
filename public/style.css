@@ -1286,7 +1286,7 @@ Version:1.0
 	font-size: 18px;
 	margin-bottom: 20px;
 	font-weight: 600;
-	t/* text-transform: capitalize; */
+	/* text-transform: capitalize; */
 }
 .hero-area3 .small-content .title span{
 	color:#F7941D;
@@ -1328,7 +1328,7 @@ Version:1.0
 	font-size: 32px;
 	margin-bottom: 20px;
 	font-weight: 700;
-	t/* text-transform: capitalize; */
+	/* text-transform: capitalize; */
 	line-height: 35px;
 }
 .hero-area4 .big-content .title span{
@@ -1408,7 +1408,7 @@ Version:1.0
 .small-banner .single-banner h3 {
 	font-size: 22px;
 	font-weight: 700;
-	t/* text-transform: capitalize; */
+	/* text-transform: capitalize; */
 	color: #333;
 }
 .small-banner .single-banner h3 span{
@@ -1419,7 +1419,7 @@ Version:1.0
 	color: #F7941D;
 	font-weight: 500;
 	margin-bottom: 5px;
-	t/* text-transform: capitalize; */
+	/* text-transform: capitalize; */
 }
 .small-banner .single-banner a {
 	color: #333;
@@ -1771,9 +1771,9 @@ Version:1.0
 	text-align: left;
 	font-size: 12px;
 	font-weight: 600;
-	/* text-transform:uppercase; */
 	line-height: 1;
 	display: inline-block;
+	/* text-transform:uppercase; */
 }
 .single-product .product-img .product-action-2 a:hover {
   color:#F7941D;
@@ -1895,7 +1895,7 @@ Version:1.0
 	position: relative;
 	font-size: 18px;
 	font-weight: 500;
-	t/* text-transform: capitalize; */
+	/* text-transform: capitalize; */
 	margin-bottom: 25px;
 	display: block;
 	border-bottom: 1px solid #ddd;
@@ -1991,7 +1991,7 @@ Version:1.0
 	color: #666;
 	font-weight: 400;
 	font-size: 14px;
-	t/* text-transform: capitalize; */
+	/* text-transform: capitalize; */
 }
 .shop-sidebar .categor-list li a:hover{
 	color:#F7941D;
@@ -2380,7 +2380,7 @@ Version:1.0
 	padding: 0 42px;
 	line-height: 45px;
 	text-align: center;
-	t/* text-transform: capitalize; */
+	/* text-transform: capitalize; */
 	margin-right: 5px;
 	border-radius: 0px;
 	background: #333;
@@ -2654,7 +2654,7 @@ Version:1.0
 .shop-home-list .shop-section-title h1 {
 	font-size: 22px;
 	margin-bottom: 0;
-	t/* text-transform: capitalize; */
+	/* text-transform: capitalize; */
 	position: relative;
 	color: #2c2d3f;
 	font-weight: 700;
@@ -3528,7 +3528,7 @@ Version:1.0
 	font-size: 25px;
 	font-weight: 600;
 	margin-bottom: 20px;
-	t/* text-transform: capitalize; */
+	/* text-transform: capitalize; */
 }
 .cown-down .content .price {
 	margin-top: 35px;
@@ -3938,7 +3938,7 @@ Version:1.0
 .related-product .section-title h2 {
 	font-size: 25px;
 	margin-bottom: 0;
-	t/* text-transform: capitalize; */
+	/* text-transform: capitalize; */
 	position: relative;
 	color: #2c2d3f;
 	font-weight: 700;
@@ -3959,7 +3959,7 @@ Version:1.0
 	position: relative;
 	font-size: 18px;
 	font-weight: 600;
-	t/* text-transform: capitalize; */
+	/* text-transform: capitalize; */
 	margin-bottom: 30px;
 	display: block;
 	background: #fff;
@@ -4121,7 +4121,7 @@ Version:1.0
 	background: #fff;
 	color: #333;
 	padding: 8px 14px;
-	t/* text-transform: capitalize; */
+	/* text-transform: capitalize; */
 	border-radius: 0;
 	font-size: 13px;
 	background: #F6F7FB;
@@ -4141,7 +4141,7 @@ Version:1.0
 	overflow:hidden;
 }
 .main-sidebar .newsletter .letter-inner h4 {
-	t/* text-transform: capitalize; */
+	/* text-transform: capitalize; */
 	margin-bottom: 25px;
 	font-size: 18px;
 	font-weight: 600;
@@ -4203,7 +4203,7 @@ Version:1.0
 .blog-single .blog-title {
 	font-size: 24px;
 	font-weight: 600;
-	t/* text-transform: capitalize; */
+	/* text-transform: capitalize; */
 	margin: 40px 0 15px 0;
 }
 .blog-single .blog-meta {
@@ -4314,7 +4314,7 @@ Version:1.0
 	position: relative;
 	font-size: 18px;
 	font-weight: 600;
-	t/* text-transform: capitalize; */
+	/* text-transform: capitalize; */
 	margin-bottom: 30px;
 	display: block;
 	background: #fff;
@@ -4354,7 +4354,7 @@ Version:1.0
 	margin-bottom: 10px;
 	display: inline-block;
 	margin-bottom: 18px;
-	t/* text-transform: capitalize; */
+	/* text-transform: capitalize; */
 }
 .blog-single .single-comment .content h4 span {
 	display: inline-block;
@@ -4362,7 +4362,7 @@ Version:1.0
 	color: #8D8D8D;
 	margin: 0;
 	font-weight: 400;
-	t/* text-transform: capitalize; */
+	/* text-transform: capitalize; */
 	display: block;
 	margin-top: 5px;
 }
@@ -4381,7 +4381,7 @@ Version:1.0
 	font-weight: 400;
 	color: #6a6a6a;
 	border-radius: 4px;
-	t/* text-transform: capitalize; */
+	/* text-transform: capitalize; */;
 	font-size: 14px;
 	background: transparent;
 	padding: 0;
@@ -4402,7 +4402,7 @@ Version:1.0
 	position: relative;
 	font-size: 18px;
 	font-weight: 600;
-	t/* text-transform: capitalize; */
+	/* text-transform: capitalize; */
 	margin-bottom: 30px;
 	display: block;
 	background: #fff;
@@ -4483,7 +4483,7 @@ Version:1.0
 }
 .contact-us .title h3 {
 	font-size: 25px;
-	t/* text-transform: capitalize; */
+	/* text-transform: capitalize; */
 	font-weight: 600;
 }
 .contact-us .single-head {
@@ -4636,7 +4636,7 @@ Version:1.0
 	font-size: 20px;
 	margin-bottom: 20px;
 	font-weight: 600;
-	t/* text-transform: capitalize; */
+	/* text-transform: capitalize; */
 }
 .error-page .error-inner p {
 	color: #666;
@@ -4683,7 +4683,7 @@ Version:1.0
 	font-size: 17px;
 	font-weight: 600;
 	color: #fff;
-	t/* text-transform: capitalize; */
+	/* text-transform: capitalize; */
 	margin-bottom: 30px;
 }
 .footer .about .logo{
